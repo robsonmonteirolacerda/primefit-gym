@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # 🏋️ PrimeFit Gym
 
 A modern and responsive fitness website built with **React**, **Vite**, and **Tailwind CSS**.  
@@ -12,6 +11,7 @@ Focused on performance, clean design, and scalability for gym and fitness studio
 The project follows modern frontend best practices, focusing on clean UI, performance, and scalability.
 
 This repository can be used as:
+
 - A portfolio project
 - A base template for gym websites
 - A learning project for React + Vite + Tailwind CSS
@@ -24,7 +24,7 @@ This repository can be used as:
 - ⚡ **Vite** – Fast build tool and dev server
 - 🎨 **Tailwind CSS v4** – Utility-first CSS framework
 - 🧩 **Lucide Icons** – Modern icon library
-- 🎬 **Framer Motion** *(planned)* – Animations
+- 🎬 **Framer Motion** _(planned)_ – Animations
 
 ---
 
@@ -34,8 +34,8 @@ This repository can be used as:
 - Fully responsive layout
 - High performance and fast loading
 - Clean and scalable architecture
-- Easy customization for real-world gyms
-=======
+- # Easy customization for real-world gyms
+
 # React + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
@@ -52,4 +52,5 @@ The React Compiler is not enabled on this template because of its impact on dev 
 ## Expanding the ESLint configuration
 
 If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
->>>>>>> 0717396 (feat: Adicionado estrutura do projeto)
+
+> > > > > > > 0717396 (feat: Adicionado estrutura do projeto)
