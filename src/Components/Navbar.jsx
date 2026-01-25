@@ -43,7 +43,7 @@ function Navbar() {
           </Link>
 
           <Link
-            to="presentaion"
+            to="offer"
             smooth
             duration={600}
             className="btn-nav"
