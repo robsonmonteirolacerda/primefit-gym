@@ -1,55 +1,91 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { Link } from "react-scroll";
 import logo from "../assets/logo.png";
 
 function Navbar() {
-  const [nav, setnav] = useState(false);
-  const changeBackground = () => {
-    if (window.scrollY >= 80) {
-      setnav(true);
-    } else {
-      setnav(false);
-    }
-  };
+  const [scrolled, setScrolled] = useState(false);
+  const [open, setOpen] = useState(false);
 
-  window.addEventListener("scroll", changeBackground);
+  useEffect(() => {
+    const onScroll = () => setScrolled(window.scrollY > 80);
+    window.addEventListener("scroll", onScroll);
+    return () => window.removeEventListener("scroll", onScroll);
+  }, []);
+
   return (
-    <nav className={nav ? "nav active" : "nav"}>
-      <Link to="main" className="logo" smooth={true} duration={1000}>
-        <img src={logo} alt="" />
-      </Link>
-      <input className="menu-btn" type="checkbox" id="menu-btn" />
-      <label className="menu-icon" htmlFor="menu-btn">
-        <span className="nav-icon"></span>
-      </label>
-      <ul className="menu">
-        <li>
-          <Link to="main" smooth={true} duration={1000}>
-            Header
+    <header className={`navbar ${scrolled ? "navbar--scrolled" : ""}`}>
+      <div className="navbar__container">
+        <Link to="main" smooth={true} duration={600} className="navbar__logo">
+          <img src={logo} alt="PrimeFit Gym" />
+        </Link>
+
+        <div className={`navbar__nav ${open ? "navbar__nav--open" : ""}`}>
+          <Link
+            to="main"
+            smooth
+            duration={1000}
+            className="btn-nav"
+            activeClass="active"
+            onClick={() => setOpen(false)}
+          >
+            Home
           </Link>
-        </li>
-        <li>
-          <Link to="features" smooth={true} duration={1000}>
+
+          <Link
+            to="features"
+            smooth
+            duration={600}
+            className="btn-nav"
+            activeClass="active"
+            onClick={() => setOpen(false)}
+          >
             Features
           </Link>
-        </li>
-        <li>
-          <Link to="presentaion" smooth={true} duration={1000}>
+
+          <Link
+            to="presentaion"
+            smooth
+            duration={600}
+            className="btn-nav"
+            activeClass="active"
+            onClick={() => setOpen(false)}
+          >
             Offer
           </Link>
-        </li>
-        <li>
-          <Link to="about" smooth={true} duration={1000}>
+
+          <Link
+            to="about"
+            smooth
+            duration={600}
+            className="btn-nav"
+            activeClass="active"
+            onClick={() => setOpen(false)}
+          >
             About
           </Link>
-        </li>
-        <li>
-          <Link to="contact" smooth={true} duration={1000}>
+
+          <Link
+            to="contact"
+            smooth
+            duration={600}
+            className="btn-nav"
+            activeClass="active"
+            onClick={() => setOpen(false)}
+          >
             Contact
           </Link>
-        </li>
-      </ul>
-    </nav>
+        </div>
+
+        <div
+          className={`hamburger ${open ? "hamburger--open" : ""}`}
+          onClick={() => setOpen(!open)}
+        >
+          <span />
+          <span />
+          <span />
+        </div>
+      </div>
+    </header>
   );
 }
 

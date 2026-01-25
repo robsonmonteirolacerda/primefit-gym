@@ -1,21 +1,24 @@
 function Header() {
   return (
-    <div id="main">
-      <div className="name">
-        <h2>STEP UP YOUR</h2>
-        <h1>
+    <header id="main" className="hero">
+      <div className="hero__content">
+        <h2 className="hero__subtitle">STEP UP YOUR</h2>
+
+        <h1 className="hero__title">
           <span>FITNESS</span> WITH US
         </h1>
-        <p className="details">
+
+        <p className="hero__description">
           Build Your Body And Fitness With Professional Touch
         </p>
-        <div className="header-btns">
-          <a href="#" className="header-btn">
+
+        <div className="hero__actions">
+          <a href="#" className="btn-primary">
             GET STARTED
           </a>
         </div>
       </div>
-    </div>
+    </header>
   );
 }
 
