@@ -1,5 +1,4 @@
 import { useState } from "react";
-import React from "react";
 import { Link } from "react-scroll";
 import logo from "../assets/logo.png";
 
@@ -16,28 +15,38 @@ function Navbar() {
   window.addEventListener("scroll", changeBackground);
   return (
     <nav className={nav ? "nav active" : "nav"}>
-      <Link to="#" className="logo">
+      <Link to="main" className="logo" smooth={true} duration={1000}>
         <img src={logo} alt="" />
       </Link>
       <input className="menu-btn" type="checkbox" id="menu-btn" />
-      <label className="menu-icon" for="menu-btn">
+      <label className="menu-icon" htmlFor="menu-btn">
         <span className="nav-icon"></span>
       </label>
       <ul className="menu">
         <li>
-          <Link to="#">Header</Link>
+          <Link to="main" smooth={true} duration={1000}>
+            Header
+          </Link>
         </li>
         <li>
-          <Link to="#">Features</Link>
+          <Link to="features" smooth={true} duration={1000}>
+            Features
+          </Link>
         </li>
         <li>
-          <Link to="#">Offer</Link>
+          <Link to="presentaion" smooth={true} duration={1000}>
+            Offer
+          </Link>
         </li>
         <li>
-          <Link to="#">About</Link>
+          <Link to="about" smooth={true} duration={1000}>
+            About
+          </Link>
         </li>
         <li>
-          <Link to="#">Contact</Link>
+          <Link to="contact" smooth={true} duration={1000}>
+            Contact
+          </Link>
         </li>
       </ul>
     </nav>
