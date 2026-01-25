@@ -36,7 +36,7 @@ requirements:
   npm: ">= 9"
 
 installation:
-  steps:
+
     - step: "Clone the repository"
       command: "git clone https://github.com/your-username/primefit-gym.git"
 
