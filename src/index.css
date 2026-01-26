@@ -122,6 +122,61 @@ button {
   font-size: 1.2rem;
 }
 
+.feature-box {
+  position: relative;
+  background: #111;
+  border-radius: 18px;
+  padding: 2rem 1.5rem;
+  text-align: center;
+  border: 1px solid rgba(255, 0, 0, 0.25);
+  overflow: hidden;
+}
+
+.feature-box::before {
+  content: "";
+  position: absolute;
+  inset: -1px;
+  border-radius: inherit;
+  background: linear-gradient(
+    120deg,
+    transparent,
+    rgba(255, 0, 0, 0.5),
+    transparent
+  );
+  opacity: 0.4;
+  filter: blur(20px);
+  animation: glowPulse 4s ease-in-out infinite;
+  z-index: 0;
+}
+
+.feature-box > * {
+  position: relative;
+  z-index: 1;
+}
+
+@keyframes glowPulse {
+  0% {
+    opacity: 0.2;
+  }
+  50% {
+    opacity: 0.45;
+  }
+  100% {
+    opacity: 0.2;
+  }
+}
+
+.feature-box:hover::before {
+  opacity: 0.75;
+  filter: blur(28px);
+}
+
+.feature-box:hover {
+  box-shadow:
+    0 0 30px rgba(255, 0, 0, 0.35),
+    0 0 60px rgba(255, 0, 0, 0.2);
+}
+
 .offer {
   min-height: 600px;
   background-image: url("./assets/offer.png");

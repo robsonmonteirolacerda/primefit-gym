@@ -1,22 +1,30 @@
-import FeaturesBox from "./Featuresbox";
-import fimage1 from "../assets/1.svg";
-import fimage2 from "../assets/2.svg";
-import fimage3 from "../assets/3.svg";
-import fimage4 from "../assets/4.svg";
+import { motion } from "framer-motion";
+import Featuresbox from "./Featuresbox";
+
+const containerVariants = {
+  hidden: {},
+  visible: {
+    transition: {
+      staggerChildren: 0.2,
+    },
+  },
+};
 
 function Features() {
   return (
-    <section className="features">
-      <div className="features__container">
-        <h2 className="features__title">Features</h2>
-
-        <div className="features__grid">
-          <FeaturesBox image={fimage1} title="Weight Lifting" />
-          <FeaturesBox image={fimage2} title="Specific Muscle" />
-          <FeaturesBox image={fimage3} title="Flex Your Muscle" />
-          <FeaturesBox image={fimage4} title="Cardio Exercises" />
-        </div>
-      </div>
+    <section id="features">
+      <motion.div
+        className="features-grid"
+        variants={containerVariants}
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true, amount: 0.3 }}
+      >
+        <Featuresbox title="Modern Equipment" image="src/assets/1.svg" />
+        <Featuresbox title="Expert Trainers" image="src/assets/2.svg" />
+        <Featuresbox title="Flexible Schedule" image="src/assets/3.svg" />
+        <Featuresbox title="Cardio Exercises" image="src/assets/4.svg" />
+      </motion.div>
     </section>
   );
 }
