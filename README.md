@@ -1,54 +1,124 @@
 # 🏋️ PrimeFit Gym
 
-A modern and responsive fitness website built with **React**, **Vite**, and **Tailwind CSS**.  
-Focused on performance, clean design, and scalability for gym and fitness studio websites.
+Landing page moderna e responsiva para academia, desenvolvida com foco em **experiência do usuário**, **design system consistente** e **animações suaves**.
+
+O projeto foi pensado para simular um produto real, aplicando boas práticas de componentização, organização de código e responsividade.
 
 ---
 
-## 📌 Overview
+## 🚀 Preview
 
-**PrimeFit Gym** is a frontend project created to simulate a real-world gym website.  
-The project follows modern frontend best practices, focusing on clean UI, performance, and scalability.
-
-This repository can be used as:
-
-- A portfolio project
-- A base template for gym websites
-- A learning project for React + Vite + Tailwind CSS
+> (adicione aqui um print ou gif do projeto rodando)
 
 ---
 
-## 🚀 Tech Stack
+## 🧠 Objetivo do Projeto
 
-- ⚛️ **React** – Component-based UI
-- ⚡ **Vite** – Fast build tool and dev server
-- 🎨 **Tailwind CSS v4** – Utility-first CSS framework
-- 🧩 **Lucide Icons** – Modern icon library
-- 🎬 **Framer Motion** _(planned)_ – Animations
+- Criar uma landing page profissional para academia
+- Aplicar um **Design System reutilizável**
+- Praticar **React moderno com componentes funcionais**
+- Trabalhar **animações e microinterações**
+- Estruturar um projeto com padrão próximo ao mercado
 
 ---
 
-## 🎯 Project Goals
+## 🛠️ Tecnologias Utilizadas
 
-- Modern dark fitness design
-- Fully responsive layout
-- High performance and fast loading
-- Clean and scalable architecture
-- # Easy customization for real-world gyms
+- **React**
+- **JavaScript (ES6+)**
+- **CSS moderno (Design System + BEM)**
+- **React Scroll**
+- **Google Fonts**
 
-# React + Vite
+---
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## 🎨 Design System
 
-Currently, two official plugins are available:
+O projeto utiliza um design system próprio, definido via CSS variables:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- 🎨 Cores centralizadas
+- 📐 Espaçamentos padronizados
+- 🔘 Botões reutilizáveis (`.btn-primary`)
+- ✨ Animações consistentes (hover, glow, cascata)
+- 📱 Responsividade pensada em mobile first
 
-## React Compiler
+Isso facilita manutenção, escalabilidade e consistência visual.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## 🧩 Componentes Principais
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- `Navbar`
+  - Menu responsivo
+  - Efeito de scroll
+  - Menu hamburger animado
+
+- `Hero`
+  - Banner com overlay
+  - Call to Action
+
+- `Features`
+  - Grid responsivo
+  - Animação em cascata
+  - FeatureBox reutilizável
+
+- `About`
+- `Offer`
+- `Contact`
+
+Cada seção é desacoplada e reutilizável.
+
+---
+
+## 📱 Responsividade
+
+- Desktop
+- Tablet
+- Mobile
+- Menu adaptado para telas pequenas
+- Grid fluido nos Features
+
+---
+
+## ⚡ Performance & UX
+
+- Animações leves
+- Transições suaves
+- Layout estável
+- Foco em legibilidade e hierarquia visual
+
+---
+
+## 📂 Estrutura do Projeto
+
+```bash
+src/
+ ├─ components/
+ ├─ assets/
+ ├─ styles/
+ ├─ App.jsx
+ └─ main.jsx
+```
+
+## ▶️ Como rodar o projeto
+
+```bash
+# instalar dependências
+npm install
+
+# rodar o projeto
+npm run dev
+```
+
+## 📌 Próximos Passos
+
+- Limpeza total de CSS legado
+- Mobile first refinado
+- Melhorias de performance
+- Deploy (Vercel / Netlify)
+- SEO básico
+
+## 👨‍💻 Autor
+
+Desenvolvido por **Robson Monteiro Lacerda**  
+💼 Em constante evolução como desenvolvedor Frontend & Java
