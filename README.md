@@ -1,124 +1,133 @@
 # 🏋️ PrimeFit Gym
 
-Landing page moderna e responsiva para academia, desenvolvida com foco em **experiência do usuário**, **design system consistente** e **animações suaves**.
+Landing page moderna e responsiva para academias, desenvolvida com **React + Vite**, focada em performance, organização de código e boas práticas de front‑end.
 
-O projeto foi pensado para simular um produto real, aplicando boas práticas de componentização, organização de código e responsividade.
-
----
-
-## 🚀 Preview
-
-> (adicione aqui um print ou gif do projeto rodando)
+O projeto foi pensado como **portfólio profissional**, aplicando conceitos reais de mercado como design system, separação por seções, componentes reutilizáveis e animações suaves.
 
 ---
 
-## 🧠 Objetivo do Projeto
+## ✨ Preview
 
-- Criar uma landing page profissional para academia
-- Aplicar um **Design System reutilizável**
-- Praticar **React moderno com componentes funcionais**
-- Trabalhar **animações e microinterações**
-- Estruturar um projeto com padrão próximo ao mercado
+> Projeto em desenvolvimento ativo 🚧
+
+Landing page com:
+
+- Hero com banner e CTA
+- Features animadas
+- Seção de oferta
+- About institucional
+- Formulário de contato
+- Navbar responsiva com menu hamburguer
 
 ---
 
-## 🛠️ Tecnologias Utilizadas
+## 🧠 Arquitetura do Projeto
 
-- **React**
-- **JavaScript (ES6+)**
-- **CSS moderno (Design System + BEM)**
-- **React Scroll**
-- **Google Fonts**
+O projeto segue uma separação clara entre **componentes reutilizáveis**, **seções da página** e **telas (pages)**.
+
+```bash
+src/
+├─ assets/            # Imagens e ícones
+│
+├─ components/        # Componentes reutilizáveis
+│  ├─ Navbar/
+│  ├─ FeatureBox/
+│  └─ Button/ (futuro)
+│
+├─ sections/          # Seções da landing page
+│  ├─ Hero/
+│  ├─ Features/
+│  ├─ Offer/
+│  ├─ About/
+│  └─ Contact/
+│
+├─ pages/             # Telas
+│  └─ Home.jsx
+│
+├─ styles/            # Design system e estilos globais
+│  └─ index.css
+│
+├─ App.jsx
+└─ main.jsx
+```
+
+### 📌 Conceitos aplicados
+
+- Separation of Concerns
+- Componentização consciente (nem tudo vira componente)
+- Design System com CSS Variables
+- Mobile First
+- Código legível e escalável
 
 ---
 
 ## 🎨 Design System
 
-O projeto utiliza um design system próprio, definido via CSS variables:
+O projeto utiliza um **design system centralizado** em CSS Variables:
 
-- 🎨 Cores centralizadas
-- 📐 Espaçamentos padronizados
-- 🔘 Botões reutilizáveis (`.btn-primary`)
-- ✨ Animações consistentes (hover, glow, cascata)
-- 📱 Responsividade pensada em mobile first
+- Cores semânticas
+- Espaçamentos padronizados
+- Tipografia consistente
+- Botões reutilizáveis
+- Sombras e efeitos de hover
 
-Isso facilita manutenção, escalabilidade e consistência visual.
+Exemplo:
 
----
-
-## 🧩 Componentes Principais
-
-- `Navbar`
-  - Menu responsivo
-  - Efeito de scroll
-  - Menu hamburger animado
-
-- `Hero`
-  - Banner com overlay
-  - Call to Action
-
-- `Features`
-  - Grid responsivo
-  - Animação em cascata
-  - FeatureBox reutilizável
-
-- `About`
-- `Offer`
-- `Contact`
-
-Cada seção é desacoplada e reutilizável.
-
----
-
-## 📱 Responsividade
-
-- Desktop
-- Tablet
-- Mobile
-- Menu adaptado para telas pequenas
-- Grid fluido nos Features
-
----
-
-## ⚡ Performance & UX
-
-- Animações leves
-- Transições suaves
-- Layout estável
-- Foco em legibilidade e hierarquia visual
-
----
-
-## 📂 Estrutura do Projeto
-
-```bash
-src/
- ├─ components/
- ├─ assets/
- ├─ styles/
- ├─ App.jsx
- └─ main.jsx
+```css
+:root {
+  --color-primary: #ff1414;
+  --color-bg: #000000;
+  --space-md: 2rem;
+  --radius-sm: 6px;
+}
 ```
+
+---
+
+## 🚀 Tecnologias Utilizadas
+
+- ⚛️ React
+- ⚡ Vite
+- 🎨 CSS moderno (Design System)
+- 🧭 React Scroll
+- 📱 Responsividade (Mobile / Desktop)
+
+---
 
 ## ▶️ Como rodar o projeto
 
 ```bash
-# instalar dependências
+# Clonar o repositório
+git clone https://github.com/robsonmonteirolacerda/primefit-gym.git
+
+# Entrar no projeto
+cd primefit-gym
+
+# Instalar dependências
 npm install
 
-# rodar o projeto
+# Rodar em desenvolvimento
 npm run dev
 ```
 
-## 📌 Próximos Passos
+---
 
-- Limpeza total de CSS legado
-- Mobile first refinado
-- Melhorias de performance
-- Deploy (Vercel / Netlify)
-- SEO básico
+## 📈 Próximos Passos
+
+- [ ] Criar componente Button reutilizável
+- [ ] Melhorar acessibilidade (ARIA / contrastes)
+- [ ] Animações com Intersection Observer
+- [ ] Versão multi‑página
+- [ ] Deploy
+
+---
 
 ## 👨‍💻 Autor
 
-Desenvolvido por **Robson Monteiro Lacerda**  
-💼 Em constante evolução como desenvolvedor Frontend & Java
+Desenvolvido por **Robson Monteiro**
+
+- GitHub: [https://github.com/robsonmonteirolacerda](https://github.com/robsonmonteirolacerda)
+
+---
+
+⭐ Se este projeto te ajudou ou te inspirou, considere deixar uma estrela!
