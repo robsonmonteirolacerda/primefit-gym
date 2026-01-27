@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import Featuresbox from "./Featuresbox";
+import Featuresbox from "@/components/Featuresbox";
 
 const containerVariants = {
   hidden: {},

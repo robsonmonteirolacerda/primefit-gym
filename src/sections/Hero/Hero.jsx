@@ -1,4 +1,5 @@
-function Header() {
+import Button from "@/components/Button/Button";
+function Hero() {
   return (
     <header id="main" className="hero">
       <div className="hero__content">
@@ -13,13 +14,11 @@ function Header() {
         </p>
 
         <div className="hero__actions">
-          <a href="#" className="btn-primary">
-            GET STARTED
-          </a>
+          <Button>GET STARTED</Button>
         </div>
       </div>
     </header>
   );
 }
 
-export default Header;
+export default Hero;
