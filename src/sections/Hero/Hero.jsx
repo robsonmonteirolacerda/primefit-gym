@@ -1,4 +1,4 @@
-import Button from "@/components/Button/Button";
+import Button from "../../components/Button/Button";
 function Hero() {
   return (
     <header id="main" className="hero">
