@@ -1,19 +1,13 @@
-import Hero from "@/sections/Hero/Hero";
-import Features from "@/sections/Features/Feature";
-import Offer from "@/sections/Offer/Offer";
-import About from "@/sections/About/About";
-import Contact from "@/sections/Contact/Contact";
+import Navbar from "@/components/Navbar/Navbar";
+import Home from "@/pages/Home";
 
-function Home() {
+function App() {
   return (
     <>
-      <Hero />
-      <Features />
-      <Offer />
-      <About />
-      <Contact />
+      <Navbar />
+      <Home />
     </>
   );
 }
 
-export default Home;
+export default App;

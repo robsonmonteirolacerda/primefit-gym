@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { Link } from "react-scroll";
-import logo from "../assets/logo.png";
-import Button from "../components/Button/Button";
+import logo from "@/assets/logo.png";
+import Button from "../Button/Button";
 
 function Navbar() {
   const [scrolled, setScrolled] = useState(false);
@@ -36,7 +36,7 @@ function Navbar() {
             </Button>
           </Link>
 
-          <Link to="presentaion" smooth duration={600}>
+          <Link to="offer" smooth duration={600}>
             <Button variant="ghost" size="sm">
               Offer
             </Button>

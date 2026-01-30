@@ -320,7 +320,7 @@ button {
   position: fixed;
   top: 0;
   width: 100%;
-  z-index: 100;
+  z-index: 9999; /* 🔥 sobe a navbar acima de tudo */
   background-color: transparent;
   transition:
     background-color 0.3s ease,
@@ -456,6 +456,7 @@ button {
     rgba(0, 0, 0, 0.4),
     rgba(0, 0, 0, 0.85)
   );
+  z-index: 0; /* 🔥 explícito */
 }
 
 .hero__content {

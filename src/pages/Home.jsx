@@ -1,5 +1,5 @@
 import Hero from "../sections/Hero/Hero";
-import Features from "../sections/Features/Features";
+import Features from "../sections/Features/Feature";
 import Offer from "../sections/Offer/Offer";
 import About from "../sections/About/About";
 import Contact from "../sections/Contact/Contact";
